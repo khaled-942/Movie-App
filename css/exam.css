@@ -1,0 +1,250 @@
+body {
+    background-color: #000;
+    font-family: Segoe UI Light;
+    overflow: hidden;
+}
+/*-------------------------------------------------------------------*/
+
+#load{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ccc;
+    z-index: 999999999999;
+}
+.sk-folding-cube {
+    margin: 300px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
+
+/*------------------left-side-nav------------------------------------*/
+.left_nav {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: #f8f6f6;
+    z-index: 999999999;
+}
+
+.left_nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0px
+}
+
+.logo,
+.icons {
+    padding: 25px 0;
+}
+
+.logo img {
+    height: 48px;
+}
+
+.dis-B {
+    display: block;
+    cursor: pointer;
+}
+
+.dis-B i {
+    font-size: 25px;
+}
+
+.icons i {
+    padding-top: 15px;
+}
+
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    z-index: 99999999;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.up {
+    display: none;
+}
+
+.anchor_ul {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor_ul a {
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.anchor_ul a:hover {
+    color: red;
+    text-decoration: none;
+
+}
+
+.sideNav span {
+    padding-top: 25px;
+}
+
+.handel {
+    padding: 0 0 35px 20px;
+}
+
+.handel i {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    transition-duration: 00.5s;
+}
+
+.handel i:hover {
+    color: red;
+}
+
+.x ,.no {
+    display: none;
+}
+
+/*-------------------------------------------------------*/
+.photo{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: #000;
+}
+h4{
+    font-size: 32px;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 100%;
+    transition-duration: 1s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo:hover .layer {
+    top: 0;
+}
+.edit {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.edit:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.height-this {
+    height: 54px;
+}
+

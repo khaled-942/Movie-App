@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exam</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/exam.css">
+</head>
+
+<body>
+    <div id="load">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+    </div>
+    
+    <div class="left_nav" id="leftnav">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="logo" class="img-fluid">
+        </div>
+        <div class="dis-B" id="change">
+            <i class="fas fa-align-justify" id="click"></i>
+            <i class="fas fa-times x" id="exit"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-globe dis-B"></i>
+            <i class="fas fa-share-alt dis-B"></i>
+        </div>
+    </div>
+
+    <div class="sideNav" id="side">
+        <div class="anchor_ul">
+            <span class="up">
+                <a href="#">Now playing</a>
+            </span>
+            <span class="up">
+                <a href="#">Popular</a>
+            </span>
+            <span class="up">
+                <a href="#">Top Rated</a>
+            </span>
+            <span class="up">
+                <a href="#">Trending</a>
+            </span>
+            <span class="up">
+                <a href="#">Upcoming</a>
+            </span>
+            <span class="up">
+                <a href="#Contact">Contact Us</a>
+            </span>
+        </div>
+
+        <div class="handel">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-globe"></i>
+            <div class="py-3" style="color: #999;">
+                Copyright Â© 2019 All Rights Reserved.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container pt-4">
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <input type="text" class="form-control w-100 text-center edit text-white" placeholder="Get Movie By Word..." id="from_api">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control w-100 text-center edit text-white" placeholder="Search..." id="from_cate">
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 text-white">
+        <div class="row" id="show2">
+
+        </div>
+    </div>
+
+    <div class="container pt-5 text-white">
+        <div class="row" id="show">
+
+        </div>
+    </div>
+
+    <section id="Contact" class="container w-75 m-auto">
+        <h2 class="my-5 text-white">Contact Us...</h2>
+        <div class="row">
+            <div class="col-md-6 height-this">
+                <input type="text" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Enter Your Name" id="Name">
+            </div>
+            <div class="col-md-6 height-this">
+                <input type="email" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Enter Your Email" id="Email">
+            </div>
+            <div class="col-md-6 height-this">
+                <input type="text" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Enter your Phone" id="Phone">
+            </div>
+            <div class="col-md-6 height-this">
+                <input type="text" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Enter your Age" id="Age">
+            </div>
+            <div class="col-md-6 height-this">
+                <input type="text" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Password 8 Chars Atleast 1 letter & 1 Numbser" id="Password">
+            </div>
+            <div class="col-md-6 height-this">
+                <input type="text" class="form-control w-100 text-center edit text-white" autocomplete="off" placeholder="Re-Enter Password" id="rePassword">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-danger " disabled  id="mainbtn">Submit</button>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
